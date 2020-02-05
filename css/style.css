@@ -1,13 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
+/*--- To make sure that all boxes has the proper size ---*/
 *, *:after, *:before {
     box-sizing: border-box;
 }
 
+/*--- Setting font and body basics ---*/
 body{
     font-family: 'Montserrat', sans-serif;
     color: #333131;
     background-color: #F7F7FF;
+}
+
+/*--- to apply the logo with the proper size and space---*/
+div.logo img {
+    width: 115px;
+    margin-bottom: 50px;
+    margin-left: 35px;
 }
 
 p {
@@ -23,11 +32,6 @@ a.active {
     color: #FF8480;
     text-decoration: none;
 }
-
-header {
-    margin-left: 35px;
-}
-
 /*-------------------------------------*/
 /*--------- Start MAIN Design ---------*/
 /*-------------------------------------*/
@@ -88,37 +92,41 @@ main .text-main p {
 
 /*--- Start Checkbox Design ---*/
 
-input[type="checkbox"] {
-    -webkit-appearance: none;
+input[type="checkbox"] + label {
+    display: block;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+  
+input[type=checkbox] + label:before {
     display: inline-block;
-	position: absolute;
+    content: "\2714";
 
-    background-color: white;
+    border: 1px solid #000;
+    border-radius: 8px;
     
-	border: 1px solid #333131;
-    border-radius: 5px;
+    padding: 0.3em;
+    margin-right: 0.5em;
 
-    
-    padding: 10px;
+    vertical-align: center;
+    color: transparent;
+    transition: .2s;
 }
-
-label {
-    position: absolute;
-    margin: 3px 0 10px 30px;
-
+  
+input[type=checkbox] + label:active:before {
+    transform: scale(0);
 }
-
-fieldset:nth-child(7) {
-    margin: 10px 0;
-}
-
+  
 /*--- Start Button Apply Now Design ---*/
 
 .form-apply button[type="submit"] {
     background-color: #57EEAB;
     width: 100%;
 
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
     
@@ -257,6 +265,10 @@ footer form button[type="submit"] {
 /* ---------------------------------------------- */
 
 @media (min-width: 1000px) {
+
+    div.logo img {
+        margin-bottom: 100px;
+    }
 
     /*--- Start Main desktop view---*/
     .wrapper-main {

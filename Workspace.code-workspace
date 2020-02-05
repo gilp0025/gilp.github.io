@@ -7,5 +7,7 @@
 			"path": "/Users/zombie/Desktop/College/2nd Term/Responsive Web Design II/In Class"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Projects"
+	}
 }
