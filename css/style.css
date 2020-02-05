@@ -1,0 +1,324 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #333131;
+    background-color: #F7F7FF;
+}
+
+p {
+    line-height: 1.5rem;
+    margin-bottom: 11px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active,
+a.active {
+    color: #FF8480;
+    text-decoration: none;
+}
+
+header {
+    margin-left: 35px;
+}
+
+/*-------------------------------------*/
+/*--------- Start MAIN Design ---------*/
+/*-------------------------------------*/
+
+main{
+    margin: 0 35px;
+}
+
+main .text-main h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+    margin-bottom: 1rem;
+}
+
+main .text-main p {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+/*--------- Start Form Apply Design ---------*/
+
+.form-apply {
+    display: block;
+    
+    background-color: white;
+
+    margin-top: 27px;
+    margin-bottom: 45px;
+    padding: 25px;
+
+    border: 0px;
+    border-radius: 30px;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+}
+
+.form-apply h2{
+    font-size: 3.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.form-apply input[type="text"], 
+.form-apply input[type="number"]{
+    background-color: #F4F4F5;
+    width: 100%;
+
+    margin: 0.5rem 0rem;
+    padding: 0.7rem;
+
+    border: 0;
+    border-radius: 15px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+
+/*--- Start Checkbox Design ---*/
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    display: inline-block;
+	position: absolute;
+
+    background-color: white;
+    
+	border: 1px solid #333131;
+    border-radius: 5px;
+
+    
+    padding: 10px;
+}
+
+label {
+    position: absolute;
+    margin: 3px 0 10px 30px;
+
+}
+
+fieldset:nth-child(7) {
+    margin: 10px 0;
+}
+
+/*--- Start Button Apply Now Design ---*/
+
+.form-apply button[type="submit"] {
+    background-color: #57EEAB;
+    width: 100%;
+
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+    border: 0;
+    border-radius: 15px;
+
+
+    color: #000;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*---------------------------------------*/
+/*--------- Start Footer Design ---------*/
+/*---------------------------------------*/
+
+footer {
+    background-color: #FFFD8C;
+    padding: 16px 34px 0 34px;
+    width: 100%;
+}
+
+.footer {
+    margin: auto;
+}
+
+.footer h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-bottom: 11px;
+}
+
+/*--- Start Social Icons Design ---*/
+
+.social-icons {
+	display: flex;
+	flex-direction: row;
+}
+
+.social-icons a {
+	padding: 20px;
+    margin: auto;
+}
+
+
+/*--- Start Footer Form Design ---*/
+
+
+footer form {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+footer form input[type="text"]{
+    display: block;
+    width: 100%;
+    background-color: #F7F7FF;
+
+    padding: 0.7rem;
+    margin: 0.5rem 0rem;
+
+    border: 0px;
+    border-radius: 15px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+footer form input#hours {
+    width: 90%;
+}
+
+footer form button[type="submit"] {
+    grid-column: span 2;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 15px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: #FF8480;
+    padding: 10px;
+}
+
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* ------------ Start Tablet view -------------- */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+
+@media (min-width: 768px) {
+
+
+    /*--- Start Main tablet view---*/
+    
+    .form-apply {
+        margin: 20px auto 93px auto;
+    }
+
+
+    .main-image {
+        width: 100%;
+        margin: auto;
+        margin-top: 0;
+    }
+    /*--- Start Footer tablet view---*/
+
+    footer form {
+        grid-template-columns: 15% 55% 30%;
+    }
+
+    footer form input#city{
+        width: 95%;
+    }
+
+    footer form button[type="submit"] {
+        grid-column: 3 /3;
+        height: 70%;
+        padding: 0;
+    }
+
+    .social-icons{
+        width: 206px;
+        margin: auto;
+    }
+}
+
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+/* ------------ Start Desktop view -------------- */
+/* ---------------------------------------------- */
+/* ---------------------------------------------- */
+
+@media (min-width: 1000px) {
+
+    /*--- Start Main desktop view---*/
+    .wrapper-main {
+        display: grid;
+        grid-template-columns: repeat(13, 1fr);
+        grid-auto-rows: 1;
+    }
+    
+    .text-main {
+        grid-column: 1 / span 5;
+        grid-row: 1;
+      }
+
+    .main-image {
+        grid-column: 4 / span 8;
+        grid-row: 1;
+        width: 70%;
+    }
+
+
+    .form-apply {
+        grid-column: 10 / span 13;
+        grid-row: 1;
+        margin: 0 auto 93px auto;
+    }
+
+
+    /*--- Start Footer desktop view---*/
+
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        width: 100%;
+    }
+
+    .text-footer{
+        grid-column: span 2;
+        grid-row: 1;
+    }
+
+    footer form input[type="text"] {
+        font-size: 1rem;
+    }
+
+
+    .form-calculate {
+        grid-column: span 3;
+        grid-row: 2;
+        width: 615px;
+        margin: 0;
+    }
+
+    .social-icons{
+        grid-column: 4;
+        grid-row: span 2;
+    }
+
+    .social-icons a {
+        padding: 20px 0 20px 40px;
+        margin: 0;
+    }
+}
