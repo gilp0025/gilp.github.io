@@ -1,0 +1,384 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*--- Start top yellow decoration ---*/
+.top table{
+    width: 100%;
+    border-collapse: collapse;
+    height: 200px;
+}
+
+.top tr,th{
+    padding: 10px;
+}
+
+.top th:nth-child(odd){
+    background-color: #fced90;
+}
+
+/*--- Figuring the logo placeholder ---*/
+
+.top{
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    width: 170px;
+    height: auto;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*--- Start menu design ---*/
+
+header div nav ul {
+    padding-left: 0px;
+    text-align: center;
+}
+
+header div nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header div nav ul li a {
+    font-weight: bold;
+    text-decoration-line: none;
+    margin: 30px;
+    font-size: 1.5rem;
+}
+
+header div nav ul li a:link,
+header div nav ul li a:visited {
+    color: #ee2963;
+}
+
+header div nav ul li a:hover,
+header div nav ul li a:active,
+header div nav ul li a.active {
+    color: #2ee7e8;
+}
+
+
+/*--- Settingg the responsive banner image ---*/
+
+.responsive {
+width: 100%;
+height: auto;
+}
+
+/*--- Start text style ---*/
+
+h2{
+    color: #ee2963;
+    font-weight: bold;
+    font-size: 2rem;
+	margin: 2rem 0rem 1rem;
+    text-align: center; 
+}
+
+p{
+    color: #292e42;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: center;
+	margin: 0rem 1.5rem;
+}
+
+/*--- Products photo display at index page ---*/
+
+.products{
+    text-align: center;
+    margin-top: 40px;
+}
+
+/*--- General button design ---*/
+button{
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: #2ee7e8;
+    font-size: 1.3rem;
+    width: 300px;
+    height: 60px;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #ee2963;
+}
+
+/*---------------------------*/
+/*---  Start footer style ---*/
+/*---------------------------*/
+
+.pink-line{
+    background-color:#ee2963;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+    position: absolute;
+    width: 100%;
+}
+
+.yellow-nav{
+    background-color: #fced90;
+    height: 130px;
+    width: auto;
+
+}
+.footer-logo{
+    width: 100px;
+    height: auto;
+    padding: 20px;
+    float: left;
+}
+.nav-footer {
+    position: relative;
+    padding-top: 55px;
+}
+
+.nav-footer ul {
+    padding-left: 0px;
+    }
+    
+.nav-footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-weight: bold;
+    }
+    
+.nav-footer ul li a {
+    text-decoration-line: none;
+    margin: 10px;
+    font-size: 1rem;
+}
+.nav-footer ul li a:link,
+.nav-footer ul li a:visited {
+    color: #ee2963;
+}
+    
+.nav-footer ul li a:hover,
+.nav-footer ul li a:active,
+.nav-footer ul li a.active {
+    color: #2ee7e8;
+}
+
+.copyright {
+    color: white;
+    position: relative;
+    padding-top: 10px;
+}
+
+/*-------------------------*/
+/*--- About Page Desing ---*/
+/*-------------------------*/
+
+/*--- Weekly hours table Style ---*/
+
+.week-hours table{
+    width: 100%;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 10px 0px;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.week-hours th{
+    padding: 20px 0px;
+}
+
+.week-hours tr:nth-child(odd){
+    background-color: #fced90;
+}
+/*---------------------------*//*---------------------------*//*---------------------------*/
+.form-wrapper{
+    text-align: center;
+}
+
+/*---------------------------*/
+/*--- Contact Page Design ---*/
+/*---------------------------*/
+
+.map{
+    width: 100%;
+    height: 217px; 
+}
+
+form {
+    margin: 1rem;
+    font-size: 1rem;
+    color: #292e42;
+}
+
+input[type="text"]{
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    color:#292e42;
+    border: 0px;
+    margin: 0.5rem 0rem;
+    box-sizing: border-box;
+    background-color: #fced90;
+}
+
+#message {
+    width: 100%;
+    height: 100px;
+    padding: 0.5rem;
+    color: #292e42;
+    border: 0px;
+    margin: 0.5rem 0rem;
+    box-sizing: border-box;
+    background-color: #fced90;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------ start iPad view -------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+@media (min-width: 768px) {
+
+    .wrapper{
+        text-align: center;
+        margin: auto;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /*--- New size for the menu ---*/
+
+    header div nav ul li a {
+        margin: 20px;
+        font-size: 1rem;
+    }  
+
+    /*--- Start IPAD text style ---*/
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    /*--------------------------------*/
+    /*---  Start IPAD footer style ---*/
+    /*--------------------------------*/
+
+    .nav-footer {
+        padding-top: 15px;
+        margin-right: 20px;
+    }
+    .nav-footer ul li {
+        display: block;
+        text-align: right;
+        padding-top: 8px;
+    }
+
+    /*--- Display products for iPad---*/
+
+    .products{
+        width: 768px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /*--- Weekly hours table Style ---*/
+
+    .week-hours table{
+        width: 50%;
+        border-spacing: 5px 0px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+
+    .week-hours th{
+        padding: 10px 0px;
+    }
+    /*---------------------------*/
+    /*--- Contact Page Design ---*/
+    /*---------------------------*/
+
+    .text{
+        width: 50%;
+        float: left;
+    }
+
+    /*--- Form Design ---*/
+
+    form {
+        width: 415px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    h2:nth-child(1){
+        grid-column: 1/3;
+    }
+
+    fieldset:nth-child(4){
+        grid-column: 1/3;
+    }
+    
+    input[type="text"]{
+        width: 95%;
+        font-size: 1rem;
+    }
+
+    #message {
+        display: block;
+        width: 98%;
+        height: 80px;
+        font-size: 1rem;
+    }
+
+    button[type="submit"] {
+        width: 200px;
+        height: 3rem;
+        grid-column: 2;
+    }
+    
+}
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------ start desktop view ----------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+@media (min-width: 900px) {
+
+    .products{
+        width: 975px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    
+}
