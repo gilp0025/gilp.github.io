@@ -37,16 +37,18 @@
                     <!-- End yellow lines decoration area -->
 
                 </div>
-                <div class="logo"><img src="image/logo_cakegroove.svg" alt="Company logo Cake Groove"></div>
+                <div class="logo">
+                    <a href="index.html"><img src="image/logo_cakegroove.svg" alt="Company logo Cake Groove"></a>
+                </div>
 
                 <!-- Start menu area -->
-                <div class="navbar">
+                <div class="topnav" id="myTopnav">
                     <nav>
-                        <ul>
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
-                            <li><a href="contact.html" class="active">CONTACT</a></li>
-                        </ul>
+                        <a href="index.html">HOME</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="contact.html" class="active">CONTACT</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <img src="image/hamburger-menu.svg" width="25px"></a>
                     </nav>
                 </div>
                 <!-- End menu area -->
@@ -59,7 +61,7 @@
                 <!-- End banner map area -->
                 
                 <!-- Start Content Area -->
-                <div class="content">
+                <div class="content-contact">
                     <div class="text">
                         <h2>Visit us</h2>
 
@@ -70,7 +72,7 @@
                     </div>
 
                     <aside>
-                        
+                        <div class="say-hi">
                         <form>
                             <h2>Just say hi</h2>
                             <fieldset>
@@ -87,7 +89,7 @@
                             
                             <button type="submit">Submit</button>
                         </form>
-
+                    </div>
                     </aside>
 
                 </div>
@@ -100,7 +102,7 @@
                 <!-- Start decoration footer area -->
                 <div class="pink-line">
                     <div class="yellow-nav">
-                        <div class="footer-logo"><img src="image/logo_cakegroove.svg" alt="Company logo Cake Groove">
+                        <div class="footer-logo"><a href="index.html"><img src="image/logo_cakegroove.svg" alt="Company logo Cake Groove"></a>
                         </div>
 
                         <!-- Start footer navegation area -->
@@ -114,7 +116,7 @@
                         </div>
                     </div>
                     
-                    <div class="copyright">&copy; Copywright 2019 MgilP
+                    <div class="copyright">&copy;
                     </div>
 
                 </div>
@@ -122,5 +124,15 @@
             </footer>
 
         </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
     </body>
 </html>

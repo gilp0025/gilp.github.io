@@ -6,6 +6,9 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style-final.css">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="images/fav_cakegroove_16x16.png">
+
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
@@ -39,71 +42,141 @@
 
                 </div>
 
-                <div class="logo"><img src="image/logo_cakegroove.svg" alt="Company logo Cake Groove"></div>
+                <div class="logo">
+                    <a href="index.html"><img src="image/logo_cakegroove.svg" alt="Company logo Cake Groove"></a>
+                </div>
 
                 <!-- Start menu area -->
-                <div class="navbar">
+                <div class="topnav" id="myTopnav">
                     <nav>
-                        <ul>
-                            <li><a href="index.html" class="active">HOME</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
-                            <li><a href="contact.html">CONTACT</a></li>
-                        </ul>
+                        <a href="index.html" class="active">HOME</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="contact.html">CONTACT</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <img src="image/hamburger-menu.svg" width="25px"></a>
                     </nav>
                 </div>
-                <!-- End menu area -->
 
             </header>
 
             <main>
                 <!-- Banner food photos area -->
                 <picture>
-                    <source srcset="image/main-banner-home_1200px.jpg" media="(min-width:650px)">
+                    <source media="(max-width: 768px)"
+                    srcset="image/main-banner-home_360x300.jpg 360w,
+                    image/main-banner-home_480x300.jpg 480w,
+                    image/main-banner-home_600x400.jpg 600w
+                    image/main-banner-home_768x400.jpg 768w">
+    
+                    <source media="(min-width: 768px)"
+                    srcset="image/main-banner-home_768x400.jpg 768w,
+                    image/main-banner-home_1280x400.jpg 1280w,
+                    image/main-banner-home_1440x400.jpg 1440w"
+    
+                    sizes="50vw">
+
                     <img src="image/main-banner-home_500px.jpg" alt="Colorful sprinkles" class="responsive">
                 </picture>
                 <!-- End food photos area -->
 
                 <!-- Start Content Area -->
-                <h2>Made with love</h2>
+                <div class="content">
+                    <h2>Made with love</h2>
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, dicta incidunt quo odio exercitationem quasi doloremque quidem laudantium, aliquid magni ducimus animi similique fuga ipsum consequatur voluptatem, aut natus eveniet.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, dicta incidunt quo odio exercitationem quasi doloremque quidem laudantium, aliquid magni ducimus animi similique fuga ipsum consequatur voluptatem, aut natus eveniet.</p>
+                </div>
 
                 <div class="products">
+                    <div class="food-photo">
                     <picture>
-                        <source srcset="image/product_cakepops325px.jpg" media="(min-width:900px)">
-                        <source srcset="image/product_cakepops384px.jpg" media="(min-width:768px)">
-                        <img src="image/product_cakepops500px.jpg" alt="colorful image of several cake pops with sprinkles">
+                        <source media="(max-width: 767px)"
+                        srcset="image/product_cakepops380px.jpg 360w,
+                        image/product_cakepops480px.jpg 480w,
+                        image/product_cakepops600px.jpg 600w">
+
+                        <source media="(min-width: 768px)"
+                        srcset="image/product_cakepops380px.jpg">
+
+                        <img src="image/product_cakepops380px.jpg" alt="colorful image of several cake pops with sprinkles">
                     </picture>
+                    <div class="centered">Cake pops</div>
+                    </div>
                     
+                    <div class="food-photo">
                     <picture>
-                        <source srcset="image/product_donuts325px.jpg" media="(min-width:900px)">
-                        <source srcset="image/product_donuts384px.jpg" media="(min-width:768px)">
-                        <img src="image/product_donuts500px.jpg" alt="a pink donut with colorful sprinkles in a pink background">
-                    </picture>    
-                    
+                        <source media="(max-width: 767px)"
+                        srcset="image/product_donuts380px.jpg 360w,
+                        image/product_donuts480px.jpg 480w,
+                        image/product_donuts600px.jpg 600w">
+
+                        <source media="(min-width: 768px)"
+                        srcset="image/product_donuts380px.jpg">
+
+                        <img src="image/product_donuts380px.jpg" alt="a pink donut with colorful sprinkles in a pink background">
+                    </picture> 
+                    <div class="centered">Donuts</div>  
+                    </div>
+                 
+                    <div class="food-photo">
                     <picture>
-                        <source srcset="image/product_cupcake325px.jpg" media="(min-width:900px)">
-                        <source srcset="image/product_cupcake384px.jpg" media="(min-width:768px)">
-                        <img src="image/product_cupcake500px.jpg" alt="a cupcake with blue frosting in a blue background">
+                        <source media="(max-width: 767px)"
+                        srcset="image/product_cupcake380px.jpg 360w,
+                        image/product_cupcake480px.jpg 480w,
+                        image/product_cupcake600px.jpg 600w">
+
+                        <source media="(min-width: 768px)"
+                        srcset="image/product_cupcake380px.jpg">
+
+                        <img src="image/product_cupcake380px.jpg" alt="a cupcake with blue frosting in a blue background">
                     </picture>
-                    
+                    <div class="centered">Cupcake</div>
+                    </div>
+
+                    <div class="food-photo">
                     <picture>
-                        <source srcset="image/product_macarron325px.jpg" media="(min-width:900px)">
-                        <source srcset="image/product_macarron384px.jpg" media="(min-width:768px)">
-                        <img src="image/product_macarron500px.jpg" alt="various macarrons in a green background">
+                        <source media="(max-width: 767px)"
+                        srcset="image/product_macarron380px.jpg 360w,
+                        image/product_macarron480px.jpg 480w,
+                        image/product_macarron600px.jpg 600w">
+
+                        <source media="(min-width: 768px)"
+                        srcset="image/product_macarron380px.jpg">
+
+                        <img src="image/product_macarron380px.jpg" alt="various macarrons in a green background">
                     </picture>
-                    
+                    <div class="centered">Macarron</div>
+                    </div>
+
+                    <div class="food-photo">
                     <picture>
-                        <source srcset="image/product_croissant325px.jpg" media="(min-width:900px)">
-                        <source srcset="image/product_croissant384px.jpg" media="(min-width:768px)">
-                        <img src="image/product_croissant500px.jpg" alt="a croissant in a dark green background">
+                        <source media="(max-width: 767px)"
+                        srcset="image/product_croissant380px.jpg 360w,
+                        image/product_croissant480px.jpg 480w,
+                        image/product_croissant600px.jpg 600w">
+
+                        <source media="(min-width: 768px)"
+                        srcset="image/product_croissant380px.jpg">
+
+                        <img src="image/product_croissant380px.jpg" alt="a croissant in a dark green background">
                     </picture>
-                    
+                    <div class="centered">Croissant</div>
+                    </div>
+
+                    <div class="food-photo">
                     <picture>
-                        <source srcset="image/product_cookie325px.jpg" media="(min-width:900px)">
-                        <source srcset="image/product_cookie384px.jpg" media="(min-width:768px)">
-                        <img src="image/product_cookie500px.jpg" alt="a chocolate cookie in a dark blue background">
+                        <source media="(max-width: 767px)"
+                        srcset="image/product_ccookie380px.jpg 360w,
+                        image/product_cookie480px.jpg 480w,
+                        image/product_cookie600px.jpg 600w">
+
+                        <source media="(min-width: 768px)"
+                        srcset="image/product_cookie380px.jpg">
+
+                        <img src="image/product_cookie380px.jpg" alt="a chocolate cookie in a bright background">
                     </picture>
+                    <div class="centered">Cookie</div>
+                    </div>
+
                 </div>
                 <!-- End Content Area-->
             </main>
@@ -113,7 +186,7 @@
                 <!-- Start decoration footer area -->
                 <div class="pink-line">
                     <div class="yellow-nav">
-                        <div class="footer-logo"><img src="image/logo_cakegroove.svg" alt="Company logo Cake Groove">
+                        <div class="footer-logo"><a href="index.html"><img src="image/logo_cakegroove.svg" alt="Company logo Cake Groove"></a>
                         </div>
 
                         <!-- Start footer navegation area -->
@@ -127,7 +200,7 @@
                         </div>
                     </div>
                     
-                    <div class="copyright">&copy; Copywright 2019 MgilP
+                    <div class="copyright">&copy; 
                     </div>
 
                 </div>
@@ -135,6 +208,15 @@
             </footer>
 
         </div>
-
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
     </body>
 </html>

@@ -1,6 +1,16 @@
-body {
-    font-family: 'Quicksand', sans-serif;
+:root {   
+    --main-colour: #ee2963;
+    --secondary-colour: #1ecad0;
+    --text-colour: #292e42;
+    --background-colour: #fced90;
+    --title-font: 'Quicksand', sans-serif;
+    --body-font: 'Quicksand', sans-serif;
 }
+
+body {
+    font-family: var(--body-font);
+}
+
 
 /*--- Start top yellow decoration ---*/
 .top table{
@@ -14,7 +24,7 @@ body {
 }
 
 .top th:nth-child(odd){
-    background-color: #fced90;
+    background-color: var(--background-colour);
 }
 
 /*--- Figuring the logo placeholder ---*/
@@ -34,36 +44,60 @@ body {
 
 /*--- Start menu design ---*/
 
-header div nav ul {
-    padding-left: 0px;
+.topnav {
+    overflow: hidden;
+}
+  
+.topnav a {
+    float: left;
+    display: block;
     text-align: center;
-}
-
-header div nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-header div nav ul li a {
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color:  var(--main-colour);
     font-weight: bold;
-    text-decoration-line: none;
-    margin: 30px;
     font-size: 1.5rem;
 }
 
-header div nav ul li a:link,
-header div nav ul li a:visited {
-    color: #ee2963;
+.topnav a:hover {
+    background-color: var(--secondary-colour);
+    color: white;
+}
+  
+.topnav a.active {
+    color: var(--secondary-colour);
 }
 
-header div nav ul li a:hover,
-header div nav ul li a:active,
-header div nav ul li a.active {
-    color: #2ee7e8;
+.topnav a.active:hover {
+    color: white;
+}
+  
+.topnav .icon {
+    display: none;
 }
 
+@media screen and (max-width: 768px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
 
 /*--- Settingg the responsive banner image ---*/
 
@@ -75,7 +109,8 @@ height: auto;
 /*--- Start text style ---*/
 
 h2{
-    color: #ee2963;
+    font-family: var(--title-font);
+    color: var(--main-colour);
     font-weight: bold;
     font-size: 2rem;
 	margin: 2rem 0rem 1rem;
@@ -83,13 +118,15 @@ h2{
 }
 
 p{
-    color: #292e42;
+    color: var(--text-colour);
     font-size: 1.3rem;
     line-height: 2rem;
     text-align: center;
-	margin: 0rem 1.5rem;
 }
 
+.content {
+	margin: 0rem 1.5rem;
+}
 /*--- Products photo display at index page ---*/
 
 .products{
@@ -102,7 +139,7 @@ button{
     color: white;
     border: none;
     cursor: pointer;
-    background-color: #2ee7e8;
+    background-color: var(--main-colour);
     font-size: 1.3rem;
     width: 300px;
     height: 60px;
@@ -110,7 +147,7 @@ button{
 }
 
 button:hover {
-    background-color: #ee2963;
+    background-color: var(--secondary-colour);
 }
 
 /*---------------------------*/
@@ -118,7 +155,7 @@ button:hover {
 /*---------------------------*/
 
 .pink-line{
-    background-color:#ee2963;
+    background-color: var(--main-colour);
     padding-top: 8px;
     padding-bottom: 10px;
     text-align: center;
@@ -128,31 +165,32 @@ button:hover {
 }
 
 .yellow-nav{
-    background-color: #fced90;
-    height: 130px;
+    background-color: var(--background-colour);
+    height: 150px;
     width: auto;
-
 }
+
 .footer-logo{
     width: 100px;
     height: auto;
-    padding: 20px;
+    padding: 30px 20px 20px 20px;
     float: left;
 }
 .nav-footer {
     position: relative;
-    padding-top: 55px;
+    padding-top: 10px;
 }
 
 .nav-footer ul {
     padding-left: 0px;
-    }
-    
+}
+
 .nav-footer ul li {
-    list-style-type: none;
-    display: inline-block;
+    display: block;
+    text-align: right;
+    padding: 8px 0;
     font-weight: bold;
-    }
+}
     
 .nav-footer ul li a {
     text-decoration-line: none;
@@ -161,7 +199,7 @@ button:hover {
 }
 .nav-footer ul li a:link,
 .nav-footer ul li a:visited {
-    color: #ee2963;
+    color: var(--main-colour);
 }
     
 .nav-footer ul li a:hover,
@@ -175,6 +213,33 @@ button:hover {
     position: relative;
     padding-top: 10px;
 }
+
+/* Insert same text in all pages */
+.copyright::after {
+    content: " Copywright 2020 Marilia GilP";
+}
+
+/*-------------------------*/
+/*--- Home Page Desing ---*/
+/*-------------------------*/
+
+.food-photo {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;    
+    font-weight: bold;
+    text-shadow: 0px 0px 8px #4e4f4f;
+}
+
+/* End Home page */
 
 /*-------------------------*/
 /*--- About Page Desing ---*/
@@ -196,7 +261,7 @@ button:hover {
 }
 
 .week-hours tr:nth-child(odd){
-    background-color: #fced90;
+    background-color: var(--background-colour);
 }
 /*---------------------------*//*---------------------------*//*---------------------------*/
 .form-wrapper{
@@ -215,29 +280,29 @@ button:hover {
 form {
     margin: 1rem;
     font-size: 1rem;
-    color: #292e42;
+    color: var(--text-colour);
 }
 
 input[type="text"]{
     display: block;
     width: 100%;
     padding: 0.7rem;
-    color:#292e42;
+    color: var(--text-colour);
     border: 0px;
     margin: 0.5rem 0rem;
     box-sizing: border-box;
-    background-color: #fced90;
+    background-color: var(--background-colour);
 }
 
 #message {
     width: 100%;
     height: 100px;
     padding: 0.5rem;
-    color: #292e42;
+    color: var(--text-colour);
     border: 0px;
     margin: 0.5rem 0rem;
     box-sizing: border-box;
-    background-color: #fced90;
+    background-color: var(--background-colour);
 }
 
 button[type="submit"] {
@@ -246,11 +311,11 @@ button[type="submit"] {
 
 }
 
-/* ------------------------------------------- */
-/* ------------------------------------------- */
-/* ------------ start iPad view -------------- */
-/* ------------------------------------------- */
-/* ------------------------------------------- */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* ------------ start Tablet view -------------- */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
 
 @media (min-width: 768px) {
 
@@ -267,10 +332,43 @@ button[type="submit"] {
 
     /*--- New size for the menu ---*/
 
-    header div nav ul li a {
+    .topnav {
+        font-family: var(--title-font);
+        padding-left: 0px;
+        text-align: center;
+        list-style-type: none;
+        display: inline-block;
+        margin: auto;
+    }
+
+    .topnav a {
+        font-weight: bold;
+        text-decoration-line: none;
         margin: 20px;
-        font-size: 1rem;
-    }  
+        font-size: 1.5rem;
+      margin: auto;
+    }
+
+    .topnav a:hover {
+        background-color: white;
+        color: var(--secondary-colour);
+    }
+
+    .topnav a.active:hover {
+        color: var(--secondary-colour);
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: relative;
+      margin: auto;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+      margin: auto;
+    }
 
     /*--- Start IPAD text style ---*/
 
@@ -283,6 +381,13 @@ button[type="submit"] {
         line-height: 1.5rem;
     }
 
+    .content{
+        width: 800px;
+        margin: auto;
+    }
+    .text{
+        padding: 0 40px;
+    }
     /*--------------------------------*/
     /*---  Start IPAD footer style ---*/
     /*--------------------------------*/
@@ -291,6 +396,7 @@ button[type="submit"] {
         padding-top: 15px;
         margin-right: 20px;
     }
+
     .nav-footer ul li {
         display: block;
         text-align: right;
@@ -299,18 +405,30 @@ button[type="submit"] {
 
     /*--- Display products for iPad---*/
 
+    .content {
+        width: 700px;
+        margin: auto;
+    }
+
     .products{
-        width: 768px;
+        display: grid;
+        width: 760px;
+        grid-template-columns: 1fr 1fr;
+        margin: 40px auto auto auto;
+    } 
+
+    /*---------------------------*/
+    /*--- About Page Design ---*/
+    /*---------------------------*/
+
+    .content-about{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-left: auto;
-        margin-right: auto;
     }
-    
     /*--- Weekly hours table Style ---*/
 
     .week-hours table{
-        width: 50%;
+        width: 90%;
         border-spacing: 5px 0px;
         margin-top: 30px;
         margin-bottom: 20px;
@@ -320,13 +438,17 @@ button[type="submit"] {
     .week-hours th{
         padding: 10px 0px;
     }
+
     /*---------------------------*/
     /*--- Contact Page Design ---*/
     /*---------------------------*/
+    .map {
+        height: 400px;
+    }
 
-    .text{
-        width: 50%;
-        float: left;
+    .content-contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     /*--- Form Design ---*/
@@ -374,11 +496,32 @@ button[type="submit"] {
 
 @media (min-width: 900px) {
 
+    /* Desktop footer style */
+    .yellow-nav{
+        height: 120px;
+    }
+    
+    .footer-logo{
+        padding-top: 15px;
+    }
+
+    .nav-footer {
+        padding-top: 6px;
+    }
+
+    .nav-footer ul li {
+        padding: 5px;
+    }
+    /* End desktop footer style*/
+
     .products{
-        width: 975px;
+        width: 1140px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
 
+    .centered {
+        font-size: 4rem;
     }
     
 }
