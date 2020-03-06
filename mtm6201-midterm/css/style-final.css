@@ -1,6 +1,6 @@
 :root {   
     --main-colour: #ee2963;
-    --secondary-colour: #1ecad0;
+    --secondary-colour: #2EE7E8;
     --text-colour: #292e42;
     --background-colour: #fced90;
     --title-font: 'Quicksand', sans-serif;
@@ -140,7 +140,11 @@ button{
     border: none;
     cursor: pointer;
     background-color: var(--main-colour);
+
+    font-family: var(--body-font);
+    font-weight: bold;
     font-size: 1.3rem;
+
     width: 300px;
     height: 60px;
     margin-top: 30px;
@@ -278,7 +282,7 @@ button:hover {
 }
 
 form {
-    margin: 1rem;
+    margin: 0 1rem 1rem 1rem;
     font-size: 1rem;
     color: var(--text-colour);
 }
