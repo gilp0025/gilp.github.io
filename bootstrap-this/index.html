@@ -11,26 +11,28 @@
     <title>Bootstrap this!</title>
   </head>
   <body>
-
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-        <!-- a brand style cam be acheive by assing .navbar-brand -->
-       <a href="#" class="navbar-brand"><img src="https://via.placeholder.com/50" alt="My logo"></a>
-       
-       <!-- hamburger menu -->
-       <button class="navbar-toggler" 
-           data-toggle="collapse" 
-           data-target="#myNav">
-   
-           <span class="navbar-toggler-icon"></span>
-       </button>
-   
-       <!-- the main nav needs to be placed inside a .navbar-nav container in order to work -->
-       <div id="myNav" class="collapse navbar-collapse">
-            <div class="navbar-nav ml-auto text-center"> <!-- ml-auto joga o menu para a direita-->
-                <a href="#" class="nav-link active">Home</a>
-               <a href="#history" class="nav-link">History</a>
-               <a href="#features" class="nav-link">Features</a>
-               <a href="#seealso" class="nav-link">See Also</a>
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top p-0">
+        <div class="container">
+            <!-- a brand style can be acheive by assing .navbar-brand -->
+            <a href="#" class="navbar-brand"><img src="/gilp0025.github.io/bootstrap-this/images/icon_bootstrip-this.svg" height="30px" alt="My Bootstrap Logo"></a>
+            
+            <!-- hamburger menu -->
+            <button class="navbar-toggler" 
+                data-toggle="collapse" 
+                data-target="#myNav">
+        
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- the main nav needs to be placed inside a .navbar-nav container in order to work -->
+            <div id="myNav" class="collapse navbar-collapse">
+                <div class="navbar-nav ml-auto text-center"> <!-- ml-auto joga o menu para a direita-->
+                    <a href="#" class="nav-link active">Home</a>
+                    <a href="#history" class="nav-link">History</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#seealso" class="nav-link">See Also</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -40,44 +42,49 @@
     <div class="container jumbotron mt-4 mb-3">
         <h1 class="display-3 mt-4">Do you know Bootstrap?</h1>
 
-        <div class="row pt-5">
-            <div class="col-sm">
-                <p class="text-left">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
-            </div>
-            <div class="col-sm">
-                <p class="text-left">Bootstrap is the sixth-most-starred project on GitHub, with more than 135,000 stars, behind freeCodeCamp (almost 307,000 stars) and marginally behind Vue.js framework. According to Alexa Rank, Bootstrap getbootstrap.com is in the top-2000 in US while vuejs.org is in top-7000 in US.</p>
+            <div class="row pt-5">
+                <div class="col-sm">
+                    <p class="text-left">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+                </div>
+                <div class="col-sm">
+                    <p class="text-left">Bootstrap is the sixth-most-starred project on GitHub, with more than 135,000 stars, behind freeCodeCamp (almost 307,000 stars) and marginally behind Vue.js framework. According to Alexa Rank, Bootstrap getbootstrap.com is in the top-2000 in US while vuejs.org is in top-7000 in US.</p>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container mt-5">
-        <h1 class="display-4">Contents</h1>
+        <div class="container mt-5">
+            <h1 class="display-4">Contents</h1>
 
-        <div class="list-group">
-            <a href="#history" class="list-group-item list-group-item-action">History</a>
-            <a href="#features" class="list-group-item list-group-item-action">Features</a>
-            <a href="#seealso" class="list-group-item list-group-item-action">See also</a>
+            <div class="list-group">
+                <a href="#history" class="list-group-item list-group-item-action">History</a>
+                <a href="#features" class="list-group-item list-group-item-action">Features</a>
+                <a href="#seealso" class="list-group-item list-group-item-action">See also</a>
+            </div>
         </div>
-    </div>
 
-    <!-- Solid divider -->
-    <div class="mb-5 mt-5" id="history"><hr class="solid"></div>
         
-    <div class="container">
-        <h1 class="display-4 mt-5">History</h1>
+        <div class="container">
+            
+            <div class="mb-5 mt-5" id="history">
+                <figure>
+                    <img src="/gilp0025.github.io/bootstrap-this/images/computer_clement-h-95YRwf6CNw8-unsplash.jpg" class="img-fluid" alt="computer with bootstrap code">
+                </figure>
+            </div>
+
+            <h1 class="display-4 mt-5">History</h1>
+            
+            <p class="h3 mt-5 mb-3 font-weight-light">Early beginnings</p>
+
+            <p class="text-left">Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools. Before Bootstrap, various libraries were used for interface development, which led to inconsistencies and a high maintenance burden. According to Twitter developer Mark Otto:
+
+            A super small group of developers and I got together to design and build a new internal tool and saw an opportunity to do something more. Through that process, we saw ourselves build something much more substantial than another internal tool. Months later, we ended up with an early version of Bootstrap as a way to document and share common design patterns and assets within the company.[4]
+
+            After a few months of development by a small group, many developers at Twitter began to contribute to the project as a part of Hack Week, a hackathon-style week for the Twitter development team. It was renamed from Twitter Blueprint to Bootstrap, and released as an open source project on August 19, 2011.[5] It has continued to be maintained by Mark Otto, Jacob Thornton, and a small group of core developers, as well as a large community of contributors.</p>
         
-        <p class="h3 mt-5 mb-3 font-weight-light">Early beginnings</p>
 
-        <p class="text-left">Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools. Before Bootstrap, various libraries were used for interface development, which led to inconsistencies and a high maintenance burden. According to Twitter developer Mark Otto:
+            <p class="h3 mt-5 mb-3 font-weight-light">Now and then</p>
 
-        A super small group of developers and I got together to design and build a new internal tool and saw an opportunity to do something more. Through that process, we saw ourselves build something much more substantial than another internal tool. Months later, we ended up with an early version of Bootstrap as a way to document and share common design patterns and assets within the company.[4]
-
-        After a few months of development by a small group, many developers at Twitter began to contribute to the project as a part of Hack Week, a hackathon-style week for the Twitter development team. It was renamed from Twitter Blueprint to Bootstrap, and released as an open source project on August 19, 2011.[5] It has continued to be maintained by Mark Otto, Jacob Thornton, and a small group of core developers, as well as a large community of contributors.</p>
-        
-
-        <p class="h3 mt-5 mb-3 font-weight-light">Now and then</p>
-
-        <p class="text-left">After many improvements until we reach the Bootstrap 4, Bootstrap 5 is supposed to be the upcoming version of the most popular open source front-end framework in the world.</p>
+            <p class="text-left">After many improvements until we reach the Bootstrap 4, Bootstrap 5 is supposed to be the upcoming version of the most popular open source front-end framework in the world.</p>
             
             <div class="row mt-4">
                 <div class="col">
@@ -93,86 +100,85 @@
                 </div>
             </div>
 
-        <!-- Solid divider -->
-        <div class="mb-5 mt-5" id="features"><hr class="solid"></div>
+            <!-- Solid divider -->
+            <div class="mb-5 mt-5" id="features"><hr class="solid"></div>
     
     
-        <h1 class="display-4">Features</h1>
+            <h1 class="display-4">Features</h1>
         
-        <p class="text-left">Bootstrap is focuses on simplifying the development of website. Once added to a project, Bootstrap provides basic style definitions for all HTML elements. The result is a uniform appearance for prose, tables and form elements across web browsers. In addition, developers can take advantage of CSS classes defined in Bootstrap to further customize the appearance of their contents. For example, Bootstrap has provisioned for light- and dark-colored tables, page headings, more prominent pull quotes, and text with a highlight.</p>
+            <p class="text-left">Bootstrap is focuses on simplifying the development of website. Once added to a project, Bootstrap provides basic style definitions for all HTML elements. The result is a uniform appearance for prose, tables and form elements across web browsers. In addition, developers can take advantage of CSS classes defined in Bootstrap to further customize the appearance of their contents. For example, Bootstrap has provisioned for light- and dark-colored tables, page headings, more prominent pull quotes, and text with a highlight.</p>
 
-        <p class="text-left">Bootstrap also comes with several JavaScript components in the form of jQuery plugins. They provide additional user interface elements such as dialog boxes, tooltips, and carousels. Each Bootstrap component consists of an HTML structure, CSS declarations, and in some cases accompanying JavaScript code.</p>
-        
-        <p class="h3 mt-5 mb-3 font-weight-light">Examples for common classes utilities</p>
-        
-        <p class="text-left">You can use its layout components to affect an entire web page. The basic layout component is called "Container", as every other element in the page is placed in it. Developers can choose between classes, to create their own page. Here's a few examples:</p>
-        
-
-        <div class="row mt-2 mb-2">
-            <div class="col-sm-6 mt-2 mb-2">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Text alignment</h5>
-                  <p class="card-text">Easily realign text to components with text alignment classes using the classes .text-left, .text-center, .text-right.</p>
-                  <a href="https://getbootstrap.com/docs/4.0/utilities/text/#text-alignment" class="btn btn-primary">Read more</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 mt-2 mb-2">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Text wrapping and overflow</h5>
-                        <p class="card-text">Prevent text from wrapping with a .text-nowrap class. For longer content, you can add a .text-truncate class to truncate the text with an ellipsis. Requires display: inline-block or display: block.</p>
-                        <a href="https://getbootstrap.com/docs/4.0/utilities/text/#text-wrapping-and-overflow" class="btn btn-primary">Read more</a>
-                    </div>
-                </div>
-            </div>
+            <p class="text-left">Bootstrap also comes with several JavaScript components in the form of jQuery plugins. They provide additional user interface elements such as dialog boxes, tooltips, and carousels. Each Bootstrap component consists of an HTML structure, CSS declarations, and in some cases accompanying JavaScript code.</p>
             
-            <div class="col-sm-6 mt-2 mb-2">
-              <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Color</h5>
-                    <p class="card-text">Bootstrap has a variety of default colos to use such as:</p>
-                    <p class="text-primary">.text-primary</p>
-                    <p class="text-secondary">.text-secondary</p>
-                    <p class="text-success">.text-success</p>
-                    <p> class="text-danger">Danger link</p>
-                    <p> class="text-warning">Warning link</p>
-                    <p class="text-info">Info link</p>
-                  <a href="https://getbootstrap.com/docs/4.0/utilities/colors/#color" class="btn btn-primary">Read more</a>
-                </div>
-              </div>
-            </div>
+            <p class="h3 mt-5 mb-3 font-weight-light">Examples for common classes utilities</p>
+            
+            <p class="text-left">You can use its layout components to affect an entire web page. The basic layout component is called "Container", as every other element in the page is placed in it. Developers can choose between classes, to create their own page. Here's a few examples:</p>
+        
 
-            <div class="col-sm-6 mt-2 mb-2">
+            <div class="row mt-2 mb-2">
+                <div class="col-sm-6 mt-2 mb-2">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Background color</h5>
-                        <p class="card-text">Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes.</p>
-                        <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
-                        <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
-                        <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
-                        <a href="https://getbootstrap.com/docs/4.0/utilities/colors/#background-color" class="btn btn-primary">Read more</a>
+                    <h5 class="card-title">Text alignment</h5>
+                    <p class="card-text">Easily realign text to components with text alignment classes using the classes .text-left, .text-center, .text-right.</p>
+                    <a href="https://getbootstrap.com/docs/4.0/utilities/text/#text-alignment" class="btn btn-primary">Read more</a>
                     </div>
                 </div>
+                </div>
+
+                <div class="col-sm-6 mt-2 mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Text wrapping and overflow</h5>
+                            <p class="card-text">Prevent text from wrapping with a .text-nowrap class. For longer content, you can add a .text-truncate class to truncate the text with an ellipsis. Requires display: inline-block or display: block.</p>
+                            <a href="https://getbootstrap.com/docs/4.0/utilities/text/#text-wrapping-and-overflow" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 mt-2 mb-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Color</h5>
+                        <p class="card-text">Bootstrap has a variety of default colos to use such as:</p>
+                        <p class="text-primary">.text-primary</p>
+                        <p class="text-secondary">.text-secondary</p>
+                        <p class="text-success">.text-success</p>
+                        <p> class="text-danger">Danger link</p>
+                        <p> class="text-warning">Warning link</p>
+                        <p class="text-info">Info link</p>
+                    <a href="https://getbootstrap.com/docs/4.0/utilities/colors/#color" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-sm-6 mt-2 mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Background color</h5>
+                            <p class="card-text">Similar to the contextual text color classes, easily set the background of an element to any contextual class. Anchor components will darken on hover, just like the text classes.</p>
+                            <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                            <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                            <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                            <a href="https://getbootstrap.com/docs/4.0/utilities/colors/#background-color" class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-        </div>
-
-        <div class="mb-5 mt-5" id="seealso"><hr class="solid"></div>
+            <div class="mb-5 mt-5" id="seealso"><hr class="solid"></div>
     
-        <h1 class="display-4">See also</h1>
-        The following resources  can be used to help you to understand more bootstrap and to develop your own website.
+            <h1 class="display-4">See also</h1>
+            <p class="text-left">The following resources  can be used to help you to understand more bootstrap and to develop your own website.</p>
 
-        <div class="list-group list-group-flush mt-3 mb-5">
-            <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/" class="list-group-item pl-0">Bootstrap Documentation</a>
-            <a href="https://getbootstrap.com/docs/4.4/utilities/colors/" class="list-group-item pl-0">Bootstrap Color Utilities</a>
-            <a href="https://getbootstrap.com/docs/4.4/utilities/spacing/" class="list-group-item pl-0">Bootstrap Spacing Utilities</a>
-            <a href="https://www.linkedin.com/learning/bootstrap-4-essential-training" class="list-group-item pl-0">Bootstrap 4 Essential Training | LinkedIn Learning</a>
+            <div class="list-group list-group-flush mt-3 mb-5">
+                <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/" class="list-group-item pl-0">Bootstrap Documentation</a>
+                <a href="https://getbootstrap.com/docs/4.4/utilities/colors/" class="list-group-item pl-0">Bootstrap Color Utilities</a>
+                <a href="https://getbootstrap.com/docs/4.4/utilities/spacing/" class="list-group-item pl-0">Bootstrap Spacing Utilities</a>
+                <a href="https://www.linkedin.com/learning/bootstrap-4-essential-training" class="list-group-item pl-0">Bootstrap 4 Essential Training | LinkedIn Learning</a>
+            </div>
         </div>
-
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
