@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {\rtf1\ansi\ansicpg1252\uc0\stshfdbch0\stshfloch0\stshfhich0\stshfbi0\deff0\adeff0{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}{\f2\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}}{\colortbl;\red0\green0\blue0;\red67\green67\blue67
 ;\red102\green102\blue102;}{\stylesheet{\s0\snext0\sqformat\spriority0\fi0\sb0\sa0\aspalpha\aspnum\adjustright\widctlpar\ltrpar\li0\lin0\ri0\rin0\ql\faauto\sl276\slmult1\rtlch\ab0\ai0\af2\afs22\ltrch\b0\i0\fs22\loch\af2\dbch\af2\hich\f2\strike0\ulnone\cf1 Normal;}{\s1\sbasedon0\snext0\styrsid15694742
 \sqformat\spriority0\keep\keepn\fi0\sb400\sa120\aspalpha\aspnum\adjustright\widctlpar\ltrpar\li0\lin0\ri0\rin0\ql\faauto\sl276\slmult1\rtlch\ab0\ai0\af2\afs40\ltrch\b0\i0\fs40\loch\af2\dbch\af2\hich\f2\strike0\ulnone\cf1 heading 1;}{\s2\sbasedon0\snext0\styrsid15694742
@@ -467,3 +468,47 @@
 ;\lsdpriority67 Medium Grid 1 Accent 6;\lsdpriority68 Medium Grid 2 Accent 6;\lsdpriority69 Medium Grid 3 Accent 6;\lsdpriority70 Dark List Accent 6;\lsdpriority71 Colorful Shading Accent 6;\lsdpriority72 Colorful List Accent 6;\lsdpriority73 Colorful Grid Accent 6
 ;\lsdqformat1\lsdpriority19 Subtle Emphasis;\lsdqformat1\lsdpriority21 Intense Emphasis;\lsdqformat1\lsdpriority31 Subtle Reference;\lsdqformat1\lsdpriority32 Intense Reference;\lsdqformat1\lsdpriority33 Book Title;\lsdsemihidden1\lsdunhideused1\lsdpriority37 Bibliography
 ;\lsdsemihidden1\lsdunhideused1\lsdqformat1\lsdpriority39 TOC Heading;}}}
+=======
+# Marilia GilP Portfolio
+
+IMD MTM6201 - Responsive Web Design 2
+<br>Algonquin College
+<br>
+<br>
+
+## Creative Process
+
+The goal was to present a portfolio to showcase my works to possible employees. The idea was to collect one of each field I've already done some work, such as graphic design, advertising and calligraphy. 
+
+I did the first layout on XD and using its file as a reference, I started programming the actual version. My idea was to keep it simple and focused on 4 specific cases on my home screen and let my info in the about page. I believe when someone reaches my website it would be because the person got the url through a cover letter or a resume, so it wouldn't be necessary to re-introduce myself. 
+
+Overall was interesting to develop a website this big, but now that's done, I'm thinking to make some changes in the future, such as merge the About and Contact pages into one, put my email, phone and social media after my presentation, making everything even simpler.
+<br>
+<br>
+
+## Challenges
+
+I had a lot of issues with coding while formatting my work's pages because I was using names like "work", "work-text", "work-content" and so on, then I realized that every class has to receive and unique name, if you use class even with the dash, I could get both values. If I knew that from the start, it would save me a huge headache. In the end, I decided to re-write everything using scss and was awesome because I had the chance to find redundancies and fix some problems.
+
+Actually, I'm still facing problems to import the reset.css to my .css file. I tried several formats and none of them worked, so I'm feeling a bit frustrated. I even ask Tyler how to place it, and I've failed anyway. 
+
+I also had troubles with the footer. It was in the middle of some pages (like About and Contact ones) due to lack of content. So I've tried to force the viewport to fix it, adding some padding so the footer wouldn't be on top pages with more content (like the work ones), but using this "fix" was showing problems too, so, to be honest, I gave up. I hope it's fine now.
+<br>
+<br>
+
+## Next steps
+
+As English is not my first language, I'm struggling to make the content for all pages, but I definitely will do it. I want to make an in-depth though about my process, the steps along the way, the final result and the lessons learned on every page, so it will take time and will be my quarantine project for the next month.
+
+I'm also thinking to get rid of one of the works (probably John Lewis or Linkedin) to create something related to programming. I have some project which would be nice to show, such as my bakery page or even the bootstrap one.
+
+Besides, I would like to add some animations on page transition to make browser more fluid. 
+<br>
+<br>
+
+## Resources 
+
+[Google Fonts](https://fonts.google.com/)
+<br>[W3schools](http://w3schools.com/)
+<br>[CSS Tricks](https://css-tricks.com/)
+>>>>>>> 89bd6f5cd5fbd445036354523fb6412218457cd0
