@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Marilia GilP - Interactive Media Designer</title>
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <header>
+                <div class="top">
+                    <a href="index.html"><img class="logo" src="images/Logo_mgp_green.svg" alt="Company logo Cake Groove"></a>  
+                    <div class="subtitle">interactive media designer</div>
+                </div>
+
+                <!-- Start menu area -->
+                <div class="topnav" id="myTopnav">
+                    <nav>
+                        <a href="index.html">Works</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html" class="active">Contact</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <img src="images/ico_hamburger-menu.svg" width="25px" alt="Toggle menu"></a>
+                    </nav>
+                </div>
+
+            </header>
+
+            <main>
+
+                <div class="content">
+
+                    <div>
+                        <h2>Just say hi</h2>
+                        <p>Do you want to get in touch, have questions or want to know more how to start a project with me? Please, fill this form, select a topic below related to your message, and I’ll answer. ;)</p>
+                    </div>
+
+                
+                    <div>
+                        <form>
+                            
+                            <fieldset>
+                                <input type="text" name="name" id="name" placeholder="Name">
+                            </fieldset>
+
+                            <hr>
+
+                            <fieldset>
+                                <input type="text" name="email" id="email" placeholder="Email">
+                            </fieldset>
+
+                            <hr>
+
+                            <fieldset>
+                                <input type="text" name="phone" id="phone" placeholder="Phone">
+                            </fieldset>
+
+                            <hr>
+
+                            <input list="subject" name="subject" placeholder="Subject">
+                                <datalist id="subject">
+                                    <option value="Calligraphy"></option>
+                                    <option value="Graphic Design"></option>
+                                    <option value="UX/UI"></option>
+                                    <option value="Web Design"></option>
+                                    <option value="Hiring oportunity"></option>
+                                </datalist>
+                            
+                            <hr>
+                                
+                            <fieldset> 
+                                <textarea name="message" id="message" placeholder="What is on your mind?"></textarea>
+                            </fieldset>
+                            
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+                <!-- End Content Area -->
+                
+            </main>
+
+            <footer>
+
+                <!-- Start decoration footer area -->
+                <div class="footer-area">
+                    <div class="social-icons">
+                        <a href="#"><img src="images/ico_email.svg" alt="Email" class="social-svg"></a>
+                        <a href="#"><img src="images/ico_linkedin.svg" alt="Linkedin" class="social-svg"></a>
+                        <a href="#"><img src="images/ico_instagram.svg" alt="Instagram" class="social-svg"></a>
+                    </div>
+                    <div class="copyright">&copy; </div>
+                </div> 
+                <!-- End decoration footer area-->
+
+            </footer>
+
+        </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+</body>
+</html>
