@@ -15,15 +15,16 @@ body {
     font-family: var(--body-font);
     background-color: var(--background-colour);
 
-    @media (min-width: 768px) { 
-        // position: relative;
-        min-height: 100vh;
-        // padding-bottom: 140px;
-    }
+    // @media (min-width: 768px) { 
+    //     position: relative;
+    //     min-height: 100%;
+    //     min-height: 100vh;
+    //     padding-bottom: 140px;
+    // }
 
-    @media (min-width: 900px) { 
-        // padding-bottom: 180px;
-    }
+    // @media (min-width: 900px) { 
+    //     // padding-bottom: 180px;
+    // }
 }
 
 
@@ -118,7 +119,7 @@ body {
         display: none;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 767px) {
         display: inline-block;
         margin: auto;
 
@@ -154,7 +155,7 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .topnav a {display: none;}
     .topnav a.icon {
       float: center;
@@ -409,10 +410,10 @@ footer {
     padding: 50px 0px 0px 0px;
     width: 100%;
 
-    @media (min-width: 768px) {
-        position: absolute;
-        bottom: 0;
-    }
+    // @media (min-width: 768px) {
+    //     position: relative;
+    //     bottom: 0;
+    // }
 }
 
 .footer-area {
@@ -641,4 +642,5 @@ input{
         text-align: center;
         margin: auto;
     }
+
 }
