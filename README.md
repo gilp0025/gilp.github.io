@@ -1,7 +1,7 @@
 # Marilia GilP Portfolio
 
 IMD MTM6201 - Responsive Web Design 2
-Algonquin College
+<br>Algonquin College
 <br>
 <br>
 
