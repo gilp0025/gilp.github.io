@@ -424,7 +424,6 @@ button {
   border: 2px solid;
   border-radius: 30px;
   cursor: pointer;
-  background-color: var(--secondary-colour);
   margin: auto;
   font-family: var(--title-font);
   font-size: 1.3rem;
@@ -433,7 +432,7 @@ button {
 }
 
 button:hover {
-  color: var(--secondary-colour);
+  color: var(--tertiary-colour);
   background-color: var(--tertiary-colour);
 }
 
