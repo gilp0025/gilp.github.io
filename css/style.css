@@ -4,7 +4,7 @@
   --secondary-colour: #efe6e1;
   --tertiary-colour:#D7452B;
   --text-colour: #292e42;
-  --background-colour: #efe6e1;
+  --background-colour: #ffffff;
   --title-font: 'Playfair Display', serif;
   --body-font: 'Lato', sans-serif;
 }
@@ -163,7 +163,7 @@ h2 {
   font-family: var(--title-font);
   color: var(--main-colour);
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -178,7 +178,7 @@ h3 {
   font-family: var(--title-font);
   color: var(--main-colour);
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -298,20 +298,20 @@ ul a:hover, ul a:active, ul a.active {
 
 @media (min-width: 768px) {
   .content {
-    margin: 40px 45px 20px 45px;
+    margin: 40px 65px 20px 65px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 2rem;
-            column-gap: 2rem;
+    -webkit-column-gap: 5rem;
+            column-gap: 5rem;
   }
 }
 
 @media (min-width: 900px) {
   .content {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
 }
 
@@ -321,14 +321,14 @@ ul a:hover, ul a:active, ul a.active {
 
 @media (min-width: 768px) {
   .workabout {
-    margin: 40px 45px 20px 45px;
+    margin: 40px 65px 20px 65px;
   }
 }
 
 @media (min-width: 900px) {
   .workabout {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
 }
 
@@ -471,9 +471,9 @@ footer {
   .footer-area {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "left middle middle right";
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "left middle middle middle right";
     margin: 0px 50px;
   }
 }

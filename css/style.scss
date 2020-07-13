@@ -6,7 +6,8 @@
     --secondary-colour: #efe6e1;
     --tertiary-colour:#D7452B;
     --text-colour: #292e42;
-    --background-colour: #efe6e1;
+    // --background-colour: #efe6e1;
+    --background-colour: #ffffff;
     --title-font: 'Playfair Display', serif;;
     --body-font: 'Lato', sans-serif;
 }
@@ -182,7 +183,7 @@ h2 {
     font-family: var(--title-font);
     color: var(--main-colour);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
 
@@ -195,7 +196,7 @@ h3 {
     font-family: var(--title-font);
     color: var(--main-colour);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 20px;
 
