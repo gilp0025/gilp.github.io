@@ -307,7 +307,7 @@ ul {
         margin: 40px 65px 20px 65px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 5rem;
+        column-gap: 3rem;
     }
 
     @media (min-width: 900px) {
@@ -529,7 +529,7 @@ footer {
 .photo-grid {
 
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-template-columns: 1fr;
 
     @media (min-width: 768px) {

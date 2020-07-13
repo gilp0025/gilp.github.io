@@ -303,8 +303,8 @@ ul a:hover, ul a:active, ul a.active {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 5rem;
-            column-gap: 5rem;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
   }
 }
 
@@ -517,7 +517,7 @@ footer {
 .photo-grid {
   display: -ms-grid;
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
 }
